@@ -1,11 +1,10 @@
 # Python Build Example
 
-![Python Example CI build](https://github.com/eedokl/okl_build_example/workflows/okl%20build%20example%20build/badge.svg)
 ## What is this project about?
 
-It's a very basic project that shows how to set up a python package that contain a really basic calculator service.
+It's a very basic project that shows how to set up a python package.
 
-It uses GitHub actions to fire a CI build that run the tests and generate the package with the calculator
+It uses GitHub actions to fire a CI build that run the tests and generate the package
 
 The package has been created following this [tutorial](https://packaging.python.org/tutorials/packaging-projects/)
 
@@ -18,30 +17,23 @@ The package has been created following this [tutorial](https://packaging.python.
     This folder will contain the GitHub workflows template
 
 2. __/src__
-    This folder will contain the source code of the awesome calculator package :smile:
+    This folder will contain the source code
 
 ## Unit Tests
 
-This project uses [unittest](https://docs.python.org/3/library/unittest.html) as the testing framework, and [coverage.py](https://coverage.readthedocs.io/en/coverage-5.4/) for generating code coverage reports.
+This project uses [unittest](https://docs.python.org/3/library/unittest.html) as the testing framework, and [coverage.py](https://coverage.readthedocs.io/en/coverage-5.4/) for generating code coverage reports. In addition flake8 linter is used.
 
-### How to run the unit tests
-
-Inside the __/src__ folder, just run this command:
-
-````bash
-python -m unittest -v
-````
-### How to view the coverage report
+### How to run the tests with coverage report
 
 Inside the __/src__ folder, just run this command:
 
 ````bash
-coverage run -m unittest
+pytest --cov=calculator --cov-report term --cov-report html tests
 ````
+### How to view the linter report
 
-and to report on the results:
+Inside the __/src__ folder, just run this command:
+
 ````bash
-coverage report
+flake8 .
 ````
-
-
