@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: okl-build-example
+Version: 0.0.0
+Summary: My package description
+License: BSD 3-Clause License
+Keywords: one,two
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Build Example
+This is a basic python package project to play around with GitHub Actions, you can check the repository [here](https://github.com/eedokl/okl_build_example)
