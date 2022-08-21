@@ -37,7 +37,7 @@ jobs:
       continue-on-error: true
       run: |
         cd src
-        mypy --strict $(git ls-files '*.py')
+        mypy
     - name: Run Unit Tests and generate coverage report
       run: |
         cd src
